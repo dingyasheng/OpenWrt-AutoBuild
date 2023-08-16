@@ -343,7 +343,6 @@ CONFIG_PACKAGE_tree=y
 CONFIG_PACKAGE_vim-fuller=y
 CONFIG_PACKAGE_wget-ssl=y
 CONFIG_PACKAGE_blkid=y
-CONFIG_PACKAGE_hd-idle=y
 CONFIG_PACKAGE_iperf3=y
 CONFIG_PACKAGE_mount-utils=y
 CONFIG_PACKAGE_e2fsprogs=y
