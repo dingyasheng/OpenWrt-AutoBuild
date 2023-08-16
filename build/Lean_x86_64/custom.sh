@@ -337,7 +337,6 @@ CONFIG_NFS_KERNEL_SERVER_V4=y
 CONFIG_PACKAGE_nfs-kernel-server-utils=y
 CONFIG_PACKAGE_nfs-utils-libs=y
 CONFIG_PACKAGE_rpcbind=y
-CONFIG_PACKAGE_openssh-sftp-server=y  
 CONFIG_PACKAGE_r8169-firmware=y
 CONFIG_PACKAGE_rsync=y
 CONFIG_PACKAGE_rsyncd=y
