@@ -295,8 +295,8 @@ CONFIG_PACKAGE_luci-app-softethervpn=y #SoftEtherVPN服务器
 #
 # 文件共享相关(禁用):
 #
-CONFIG_PACKAGE_luci-app-minidlna=n #miniDLNA服务
-CONFIG_PACKAGE_luci-app-vsftpd=n #FTP 服务器
+CONFIG_PACKAGE_luci-app-minidlna=y #miniDLNA服务
+CONFIG_PACKAGE_luci-app-vsftpd=y #FTP 服务器
 CONFIG_PACKAGE_luci-app-samba=y #网络共享
 CONFIG_PACKAGE_autosamba=y #网络共享
 CONFIG_PACKAGE_samba36-server=n #网络共享
