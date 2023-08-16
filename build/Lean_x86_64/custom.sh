@@ -351,7 +351,6 @@ CONFIG_PACKAGE_automount=y
 CONFIG_PACKAGE_autosamba=y
 CONFIG_PACKAGE_fdisk=y
 CONFIG_PACKAGE_cfdisk=y
-CONFIG_PACKAGE_e2fsprogs=y
 EOF
 
 # 其他软件包:
