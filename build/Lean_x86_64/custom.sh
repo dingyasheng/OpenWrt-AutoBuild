@@ -312,8 +312,8 @@ cat >> .config <<EOF
 CONFIG_PACKAGE_curl=y
 CONFIG_PACKAGE_htop=y
 CONFIG_PACKAGE_nano=y
-# CONFIG_PACKAGE_screen=y
-# CONFIG_PACKAGE_tree=y
+CONFIG_PACKAGE_screen=y
+CONFIG_PACKAGE_tree=y
 # CONFIG_PACKAGE_vim-fuller=y
 CONFIG_PACKAGE_wget=y
 CONFIG_PACKAGE_bash=y
@@ -335,13 +335,7 @@ CONFIG_PACKAGE_tcpdump=y
 CONFIG_PACKAGE_luci-app-upnp=y
 # CONFIG_PACKAGE_luci-app-vssr is not set
 CONFIG_PACKAGE_kmod-macvlan=y
-CONFIG_PACKAGE_curl=y
-CONFIG_PACKAGE_htop=y
-CONFIG_PACKAGE_nano=y
-CONFIG_PACKAGE_screen=y
-CONFIG_PACKAGE_tree=y
 CONFIG_PACKAGE_vim-fuller=y
-CONFIG_PACKAGE_wget-ssl=y
 CONFIG_PACKAGE_blkid=y
 CONFIG_PACKAGE_iperf3=y
 CONFIG_PACKAGE_mount-utils=y
