@@ -320,38 +320,6 @@ jobs:
         sed -i "s/Download Link/WeTransfer/g" wetransfer.log
         echo "::warning file=WeTransfer::$(cat wetransfer.log | grep https)"
 
-    - name: 自动发布固件到 Releases
-      uses: ncipollo/release-action@main
-      if: steps.compile.outcome == 'success' && env.UPLOAD_RELEASE == 'true'
-      with:
-        name: ${{ env.FILE_TIME1 }} 「 ${{ env.FIRMWARE_MESSAGE }} 」
-        tag: ${{ env.FILE_TIME2 }}-${{matrix.target}}-${{ env.DISTRIB_REVISION }}
-        token: ${{ secrets.GIT_USER_TOKEN }}
-        body: |            
-            ★  源码 : ${{ env.REPO_URL }}
-            ★  分支 : ${{ env.REPO_BRANCH }}
-            ★  感谢源码作者无私分享！
-
-            🛠 编译版本：${{ env.DISTRIB_REVISION }}
-
-            🖥 内核版本：${{ env.KERNEL_PATCHVER }}
-
-            🎈 编译时间：${{ env.FILE_TIME1 }}
-
-            ⏰ 编译用时：${{ env.BUILD_TIME }}
-
-            🎉 [ ${{ env.FIRMWARE_MESSAGE }} ]固件下载
-
-            ━━━━━━━━━━━━━━━━━━━━
-
-            ➤ WeTransfer： ${{ env.WETRANSFER_URL }}
-
-               WeTransfer链接有效期为7天，无需注册直接下载
-
-            =========================================
-
-        artifacts: ./artifact/firmware/*
-
     - name: 删除运行记录
       uses: Mattraks/delete-workflow-runs@v2
       with:
