@@ -184,23 +184,23 @@ CONFIG_VHDX_IMAGES=y
 EOF
 
 # 多文件系统支持:
-# cat >> .config <<EOF
+cat >> .config <<EOF
 CONFIG_PACKAGE_kmod-fs-nfs=y
 CONFIG_PACKAGE_kmod-fs-nfs-common=y
 CONFIG_PACKAGE_kmod-fs-nfs-v3=y
 CONFIG_PACKAGE_kmod-fs-nfs-v4=y
 # CONFIG_PACKAGE_kmod-fs-ntfs=y
 # CONFIG_PACKAGE_kmod-fs-squashfs=y
-# EOF
+EOF
 
 # USB3.0支持:
-# cat >> .config <<EOF
-# CONFIG_PACKAGE_kmod-usb-ohci=y
-# CONFIG_PACKAGE_kmod-usb-ohci-pci=y
-# CONFIG_PACKAGE_kmod-usb2=y
-# CONFIG_PACKAGE_kmod-usb2-pci=y
-# CONFIG_PACKAGE_kmod-usb3=y
-# EOF
+cat >> .config <<EOF
+CONFIG_PACKAGE_kmod-usb-ohci=y
+CONFIG_PACKAGE_kmod-usb-ohci-pci=y
+CONFIG_PACKAGE_kmod-usb2=y
+CONFIG_PACKAGE_kmod-usb2-pci=y
+CONFIG_PACKAGE_kmod-usb3=y
+EOF
 
 # 多线多拨:
 # cat >> .config <<EOF
@@ -337,11 +337,6 @@ CONFIG_PACKAGE_r8169-firmware=y
 CONFIG_PACKAGE_rsync=y
 CONFIG_PACKAGE_rsyncd=y
 CONFIG_PACKAGE_kmod-r8169=y     
-CONFIG_PACKAGE_kmod-usb-ohci=y
-CONFIG_PACKAGE_kmod-usb-ohci-pci=y
-CONFIG_PACKAGE_kmod-usb2=y
-CONFIG_PACKAGE_kmod-usb2-pci=y
-CONFIG_PACKAGE_kmod-usb3=y
 CONFIG_PACKAGE_kmod-b44=y
 CONFIG_PACKAGE_kmod-phy-broadcom=y
 CONFIG_PACKAGE_kmod-ssb=y
